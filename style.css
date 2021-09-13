@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+
+    --Blue: hsl(246, 80%, 60%);
+    --Light-red-work: hsl(15, 100%, 70%);
+    --Soft-blue-play: hsl(195, 74%, 62%);
+    --Light-red-study: hsl(348, 100%, 68%);
+    --Lime-green-exercise: hsl(145, 58%, 55%);
+    --Violet-social: hsl(264, 64%, 52%);
+    --Soft-orange-self-care: hsl(43, 84%, 65%);
+
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    background: var(--Very-dark-blue);
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card h1 {
+    font-weight: 300;
+    padding-bottom: 1.6em;
+}
+
+.profile-card p {
+    font-weight: 300;
+    color: var(--Pale-Blue);
+    padding-bottom: 0.5em;
+}
+
+.profile-pic {
+    padding-bottom: 1.5em;
+}
+
+.profile-pic img{
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding-top: 1em;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+}
+
+li a:hover {
+    color: #fff;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    grid-area: profile-card;
+    min-width: 265px;
+    background: var(--Dark-blue);
+    color: #fff;
+    border-radius: 15px;
+    height: auto;
+}
+
+
+.card-container {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header {
+    background: var(--Blue);
+    width: 100%;
+    padding: 2em;
+    border-radius: 15px;
+}
+
+.menu {
+    padding: 0 2em 2em;
+    color: var(--Desaturated-blue);
+}
+
+ul li a {
+   cursor: pointer;
+   text-decoration: none;
+}
+
+ul li a:hover {
+    color: #fff;
+}
+
+.card {
+    width: 30%;
+    background: var(--Light-red-work);
+    color: #fff;
+    border-radius: 15px;
+    position: relative;
+    height: auto;
+}
+
+.card .img {
+    text-align: right;
+    display: block;
+}
+
+.card-body {
+    background: var(--Dark-blue);
+    height: auto;
+    border-radius: 15px;
+    padding: 2em;
+}
