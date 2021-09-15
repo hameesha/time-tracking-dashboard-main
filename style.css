@@ -31,7 +31,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -121,7 +121,7 @@ ul li a:hover {
 .card {
   width: 100%;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 0;
   overflow: hidden;
   position: relative;
@@ -177,7 +177,7 @@ ul li a:hover {
   /* height: 100%; */
   background: var(--Dark-blue);
   padding: 1em;
-  border-radius: 10px;
+  border-radius: 15px;
   background: var(--Dark-blue);
   position: absolute;
   width: 100%;
