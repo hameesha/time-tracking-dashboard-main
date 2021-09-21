@@ -2,7 +2,11 @@ let timeLinks = document.getElementsByClassName("nav-link");
 
 let dataArray = [];
 
-function dateFilter(keyword) {
+window.onload = function() {
+  dateFilter(keyword = "weekly");
+};
+
+function dateFilter(keyword = "weekly") {
   let key = keyword.toLowerCase();
      for (data of dataArray){
 
@@ -41,6 +45,10 @@ function dateFilter(keyword) {
 
 Array.from(timeLinks).forEach(link => {
       link.addEventListener('click', (e) => {
+        if (document.querySelector('#navList span.active') !== null) {
+          document.querySelector('#navList span.active').classList.remove('active');
+        }
+        e.target.className = "active";
         dateFilter(e.target.innerText);
       })
 })
@@ -53,4 +61,4 @@ fetch("./data.json")
     data.forEach((element) => {
       dataArray.push(element)
     })
-  );
+);
