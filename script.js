@@ -49,6 +49,34 @@ Array.from(timeLinks).forEach(link => {
           document.querySelector('#navList span.active').classList.remove('active');
         }
         e.target.className = "active";
+
+        if(e.target.innerText === "Daily"){
+          document.getElementById("selfDuration").innerText = "Day";
+          document.getElementById("workDuration").innerText = "Day";
+          document.getElementById("playDuration").innerText = "Day";
+          document.getElementById("socialDuration").innerText = "Day";
+          document.getElementById("studyDuration").innerText = "Day"; 
+          document.getElementById("exerciseDuration").innerText = "Day";    
+        }
+
+        if(e.target.innerText === "Weekly"){
+          document.getElementById("selfDuration").innerText = "Week";
+          document.getElementById("workDuration").innerText = "Week";
+          document.getElementById("playDuration").innerText = "Week";
+          document.getElementById("socialDuration").innerText = "Week";
+          document.getElementById("studyDuration").innerText = "Week"; 
+          document.getElementById("exerciseDuration").innerText = "Week"; 
+        }
+
+        if(e.target.innerText === "Monthly"){
+          document.getElementById("selfDuration").innerText = "Month";
+          document.getElementById("workDuration").innerText = "Month";
+          document.getElementById("playDuration").innerText = "Month";
+          document.getElementById("socialDuration").innerText = "Month";
+          document.getElementById("studyDuration").innerText = "Month"; 
+          document.getElementById("exerciseDuration").innerText = "Month"; 
+        }
+
         dateFilter(e.target.innerText);
       })
 })
