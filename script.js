@@ -36,7 +36,7 @@ function dateFilter(keyword = "weekly") {
         }
 
         if(data.title === "Self Care"){
-          document.getElementById("self care").innerText = data.timeframes[key].current;
+          document.getElementById("self").innerText = data.timeframes[key].current;
           document.getElementById("selfPre").innerText = data.timeframes[key].previous;
         }
      
