@@ -111,17 +111,19 @@ a {
   margin-bottom: 0;
 } */
 
-.menu li a {
+.menu li span {
   color: var(--Desaturated-blue);
+  cursor: pointer;
 }
 
-.menu li a:hover {
+.menu li span:hover {
   color: #fff;
 }
 
 .card {
   border-radius: 15px 15px 30px 30px;
   position: relative;
+  cursor: pointer;
 }
 
 .card .card-img {
@@ -144,6 +146,10 @@ a {
   background-color: var(--Dark-blue);
   border-radius: 15px;
   padding: 20px;
+}
+
+.card .card-body:hover {
+  background-color: var(--Blue);
 }
 
 .card .card-header {
